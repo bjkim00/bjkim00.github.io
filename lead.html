@@ -40,8 +40,6 @@
         }
     </style>
 </head>
-
-
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
@@ -49,7 +47,14 @@
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
     <input type=hidden name="oid" value="00D4x000008YSYP">
-    <input type=hidden name="retURL" value="http://bjkim00.github.io/thanks.html">
+    <input type=hidden name="retURL" value="https://bjkim00.github.io/thanks.html">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="bkim0018@gmail.com">      -->
+    <!--  ----------------------------------------------------------------------  -->
 
     <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20"
         type="text" required /><br>
@@ -57,22 +62,85 @@
     <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text"
         required /><br>
 
-    <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-    <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
-
     Product Interest:<select id="00N4x00000WqODV" name="00N4x00000WqODV" title="Product Interest" required>
         <option value="">--None--</option>
         <option value="SF1000 series">SF1000 series</option>
     </select><br>
 
-    <label for="country">Country</label><input id="country" maxlength="40" name="country" size="20" type="text" /><br>
+    <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
 
-    <label for="street">Street</label><textarea name="street"></textarea><br>
+    <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-    <label for="zip">Zip</label><input id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+    <label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
-    <label for="country">Country</label><input id="country" maxlength="40" name="country" size="20" type="text" /><br>
+    Billing Address:<input id="00N4x00000W6d97" maxlength="100" name="00N4x00000W6d97" size="20" type="text" /><br>
+
+    City:<input id="00N4x00000W6dam" maxlength="100" name="00N4x00000W6dam" size="20" type="text" /><br>
+
+    Zip Code:<input id="00N4x00000W6d9C" maxlength="20" name="00N4x00000W6d9C" size="20" type="text" /><br>
+
+    State:<select id="00N4x00000W6d9H" name="00N4x00000W6d9H" title="State">
+        <option value="">--None--</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+    </select><br>
+
+    Country:<select id="00N4x00000W6d9M" name="00N4x00000W6d9M" title="Country">
+        <option value="">--None--</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Japan">Japan</option>
+        <option value="Republic of Korea">Republic of Korea</option>
+        <option value="United States of America">United States of America</option>
+    </select><br>
 
     <input type="submit" name="submit">
 
