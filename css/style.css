@@ -29,3 +29,14 @@ div {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+.Logo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.Text {
+    position: relative;
+    text-align: center;
+}
