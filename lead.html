@@ -44,23 +44,6 @@
             padding: 20px;
         }
     </style>
-    <script>
-        var states = document.getElementById("00N4x00000W6d9H");
-        states.style.display = "none";
-        var country = document.getElementById("00N4x00000W6d9M");
-        country.onchange = changeStateDisplay;
-
-
-        function changeStateDisplay() {
-            var country = document.getElementById("00N4x00000W6d9M");
-            var countryValue = country.value;
-
-
-            if (countryValue == "United States of America") {
-                document.getElementById("00N4x00000W6d9H").style.display = "";
-            }
-        }
-    </script>
 </head>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -110,7 +93,7 @@
         <option value="Republic of Korea">Republic of Korea</option>
         <option value="United States of America">United States of America</option>
     </select><br>
-
+    <script src="/state.js"></script>
     State:<select id="00N4x00000W6d9H" name="00N4x00000W6d9H" title="State" style="display:none">
         <option value="">--None--</option>
         <option value="Alabama">Alabama</option>
